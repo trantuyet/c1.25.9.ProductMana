@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<style>
+    form{
+        width: 400px;
+        margin-left: 20px;
+        display: inline-block;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+    img {
+        width: 50px;
+    }
+
+    td:first-child {
+        padding: 5px!important;
+    }
+</style>
+<body>
+<form id="form-add" class="form-group">
+    <fieldset>
+        <legend>ADD PRODUCT</legend>
+        <input class="form-control" id="product-name" placeholder="Product Name">
+        <input class="form-control" id="product-price" placeholder="Product Price">
+        <input class="form-control" id="product-color" placeholder="Product Color">
+        <input class="form-control" id="product-desc" placeholder="Product Description">
+        <input class="form-control" id="product-img" placeholder="Product Images">
+
+        <button type="button" class="btn btn-success" onclick="addProduct()">Add</button>
+    </fieldset>
+</form>
+<form id="form-edit" class="form-group" style="display: none">
+    <fieldset>
+        <legend>EDIT PRODUCT</legend>
+        <input class="form-control" id="edit-name" placeholder="Product Name">
+        <input class="form-control" id="edit-price" placeholder="Product Price">
+        <input class="form-control" id="edit-color" placeholder="Product Color">
+        <input class="form-control" id="edit-desc" placeholder="Product Description">
+        <input class="form-control" id="edit-img" placeholder="Product Images">
+
+        <button type="button" class="btn btn-success" onclick="editProduct()">Save</button>
+    </fieldset>
+</form>
+<div id="product-manage"></div>
+<script src="main.js"></script>
+</body>
+</html>
